@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <title>Alimentación | Sistema Ganadero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">🐄 Sistema Ganadero</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="ganado.html">Ganado</a>
+      <a href="salud.html">Salud</a>
+      <a href="alimentacion.html" class="activo">Alimentación</a>
+      <a href="reproduccion.html">Reproducción</a>
+      <a href="potreros.html">Potreros</a>
+      <a href="reportes.html">Reportes</a>
+    </nav>
+  </header>
+  <div class="cerca"></div>
+  <main class="contenido">
+    <h1>Alimentación</h1>
+    <p class="subtitulo">Raciones diarias</p>
+    <table><thead><tr><th>Categoría</th><th>Kg Pasto/día</th><th>Suplemento</th></tr></thead>
+    <tbody id="tablaAlimento"><tr><td>Vaca lechera</td><td>40</td><td>3 kg concentrado</td></tr><tr><td>Ternero</td><td>5</td><td>1 kg concentrado</td></tr></tbody></table>
+  </main>
+  <footer class="pie"><p>Sistema Ganadero</p></footer>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

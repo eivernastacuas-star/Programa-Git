@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <title>Potreros | Sistema Ganadero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">🐄 Sistema Ganadero</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a><a href="ganado.html">Ganado</a><a href="salud.html">Salud</a><a href="alimentacion.html">Alimentación</a><a href="reproduccion.html">Reproducción</a><a href="potreros.html" class="activo">Potreros</a><a href="reportes.html">Reportes</a>
+    </nav>
+  </header>
+  <div class="cerca"></div>
+  <main class="contenido">
+    <h1>Potreros</h1>
+    <p class="subtitulo">Rotación</p>
+    <table><thead><tr><th>Potrero</th><th>Hectáreas</th><th>Días ocupación</th><th>Días descanso</th></tr></thead>
+    <tbody id="tablaPotreros"><tr><td>Potrero 1</td><td>2.5</td><td>3</td><td>30</td></tr><tr><td>Potrero 2</td><td>1.8</td><td>10</td><td>5</td></tr></tbody></table>
+  </main>
+  <footer class="pie"><p>Sistema Ganadero</p></footer>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

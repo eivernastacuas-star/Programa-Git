@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <title>Salud | Sistema Ganadero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">🐄 Sistema Ganadero</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="ganado.html">Ganado</a>
+      <a href="salud.html" class="activo">Salud</a>
+      <a href="alimentacion.html">Alimentación</a>
+      <a href="reproduccion.html">Reproducción</a>
+      <a href="potreros.html">Potreros</a>
+      <a href="reportes.html">Reportes</a>
+    </nav>
+  </header>
+  <div class="cerca"></div>
+  <main class="contenido">
+    <h1>Salud y tratamientos</h1>
+    <p class="subtitulo">Historial de vacunas y tratamientos</p>
+    <table>
+      <thead>
+        <tr>
+          <th>ID Animal</th>
+          <th>Tratamiento</th>
+          <th>Fecha</th>
+          <th>Veterinario</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="tablaSalud">
+        <tr>
+          <td>001</td>
+          <td>Vacuna aftosa</td>
+          <td>10/06/2026</td>
+          <td>Dr. Ramírez</td>
+          <td>Al día</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Desparasitación</td>
+          <td>02/07/2026</td>
+          <td>Dra. López</td>
+          <td>Al día</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="pie">
+    <p>Sistema Ganadero </p>
+  </footer>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

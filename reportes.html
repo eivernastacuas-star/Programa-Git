@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <title>Reportes | Sistema Ganadero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">🐄 Sistema Ganadero</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a><a href="ganado.html">Ganado</a><a href="salud.html">Salud</a><a href="alimentacion.html">Alimentación</a><a href="reproduccion.html">Reproducción</a><a href="potreros.html">Potreros</a><a href="reportes.html" class="activo">Reportes</a>
+    </nav>
+  </header>
+  <div class="cerca"></div>
+  <main class="contenido">
+    <h1>Reportes</h1>
+    <p class="subtitulo" id="resumenReportes">Generado por humano</p>
+    <button id="btnReporte">Generar Reporte Seguro</button>
+    <pre id="salidaReporte" style="background:#1B3329;color:#CBD0C2;padding:15px;margin-top:15px;overflow:auto;"></pre>
+  </main>
+  <footer class="pie"><p>Sistema Ganadero</p></footer>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

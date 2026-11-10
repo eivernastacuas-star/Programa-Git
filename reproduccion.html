@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <title>Reproducción | Sistema Ganadero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">🐄 Sistema Ganadero</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="ganado.html">Ganado</a>
+      <a href="salud.html">Salud</a>
+      <a href="alimentacion.html">Alimentación</a>
+      <a href="reproduccion.html" class="activo">Reproducción</a>
+      <a href="potreros.html">Potreros</a>
+      <a href="reportes.html">Reportes</a>
+    </nav>
+  </header>
+  <div class="cerca"></div>
+  <main class="contenido">
+    <h1>Reproducción</h1>
+    <p class="subtitulo">Control de montas y partos</p>
+    <table>
+      <thead>
+        <tr>
+          <th>ID Vaca</th>
+          <th>Fecha monta</th>
+          <th>Toro / Semen</th>
+          <th>Fecha parto estimada</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="tablaRepro">
+        <tr>
+          <td>001</td>
+          <td>15/03/2026</td>
+          <td>Simmental</td>
+          <td>22/12/2026</td>
+          <td>Gestando</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>02/01/2026</td>
+          <td>Brahman</td>
+          <td>10/10/2026</td>
+          <td>Gestando</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="pie">
+    <p>Sistema Ganadero &mdash; Proyecto Curso HTML y CSS</p>
+  </footer>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

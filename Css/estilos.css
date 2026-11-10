@@ -1,0 +1,176 @@
+/* ===== Variables de marca ===== */
+:root {
+  --verde-pasto: #26392C;
+  --verde-pasto-claro: #3B5240;
+  --piedra: #E7E9E1;
+  --piedra-oscura: #CBD0C2;
+  --texto: #2B2A25;
+  --dorado: #C08A28;
+  --blanco: #FFFDF8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--piedra);
+  color: var(--texto);
+}
+
+/* ===== Cabecera y menú ===== */
+.cabecera {
+  background: var(--verde-pasto);
+  color: var(--blanco);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+}
+
+.marca {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.menu a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.menu a:hover {
+  background: var(--verde-pasto-claro);
+}
+
+.menu a.activo {
+  background: var(--dorado);
+  color: var(--verde-pasto);
+  font-weight: 700;
+}
+
+/* ===== Detalle "cerca" (elemento distintivo) ===== */
+.cerca {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--dorado),
+    var(--dorado) 14px,
+    transparent 14px,
+    transparent 24px
+  );
+}
+
+/* ===== Contenido general ===== */
+.contenido {
+  padding: 40px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contenido h1 {
+  font-size: 2rem;
+  color: var(--verde-pasto);
+}
+
+.subtitulo {
+  color: #6b6a60;
+  margin-bottom: 28px;
+}
+
+/* ===== Tarjetas tipo "arete" ===== */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.arete {
+  background: var(--blanco);
+  border: 2px solid var(--piedra-oscura);
+  border-radius: 14px;
+  padding: 24px 16px;
+  text-align: center;
+  position: relative;
+}
+
+.arete::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--piedra);
+  border: 2px solid var(--piedra-oscura);
+  border-radius: 50%;
+}
+
+.arete .numero {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dorado);
+}
+
+.arete .etiqueta {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--texto);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Tablas (para ganado.html, salud.html, etc.) ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanco);
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--piedra-oscura);
+  text-align: left;
+}
+
+th {
+  background: var(--verde-pasto);
+  color: var(--blanco);
+}
+
+/* ===== Pie de página ===== */
+.pie {
+  text-align: center;
+  padding: 20px;
+  color: #7a7969;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 640px) {
+  .cabecera {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contenido {
+    padding: 24px 18px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <title>Ganado | Sistema Ganadero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">🐄 Sistema Ganadero</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="ganado.html" class="activo">Ganado</a>
+      <a href="salud.html">Salud</a>
+      <a href="alimentacion.html">Alimentación</a>
+      <a href="reproduccion.html">Reproducción</a>
+      <a href="potreros.html">Potreros</a>
+      <a href="reportes.html">Reportes</a>
+    </nav>
+  </header>
+  <div class="cerca"></div>
+  <main class="contenido">
+    <h1>Ganado</h1>
+    <p class="subtitulo">Listado general de animales</p>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Raza</th>
+          <th>Edad</th>
+          <th>Peso (kg)</th>
+          <th>Categoría</th>
+        </tr>
+      </thead>
+      <tbody id="tablaGanado">
+        <tr>
+          <td>001</td>
+          <td>Estrella</td>
+          <td>Holstein</td>
+          <td>4 años</td>
+          <td>520</td>
+          <td>Vaca</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Lucero</td>
+          <td>Brahman</td>
+          <td>2 años</td>
+          <td>310</td>
+          <td>Novilla</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Manchas</td>
+          <td>Jersey</td>
+          <td>6 meses</td>
+          <td>90</td>
+          <td>Ternero</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="pie">
+    <p>Sistema Ganadero </p>
+  </footer>
+  <script src="js/funciones.js"></script>
+</body>
+</html>
